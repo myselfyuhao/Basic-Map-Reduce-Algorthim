@@ -177,10 +177,10 @@ public class SecondaryIntSort {
 	   job.setOutputKeyClass(Text.class);
 	   job.setOutputValueClass(IntWritable.class);
 	   job.setInputFormatClass(TextInputFormat.class);
-     job.setOutputFormatClass(TextOutputFormat.class);
-     FileInputFormat.setInputPaths(job, new Path(otherArgs[0]));
-     FileOutputFormat.setOutputPath(job, new Path(otherArgs[1]));
-     System.exit(job.waitForCompletion(true) ? 0 : 1);
-     System.out.println("OK");
+       job.setOutputFormatClass(TextOutputFormat.class);
+       FileInputFormat.setInputPaths(job, new Path(otherArgs[0]));
+       FileOutputFormat.setOutputPath(job, new Path(otherArgs[1]));
+       System.exit(job.waitForCompletion(true) ? 0 : 1);
+       System.out.println("OK");
     }
 }
