@@ -101,7 +101,7 @@ public class MatrixMlp {
 	    	System.err.println("Usage: numbersum <in> <out>");  
 	    	System.exit(2);  
 	    	}  
-	    Job job = new Job(conf, "number sum");  
+	    Job job = new Job(conf, "Matric Multiply");  
 	    job.setJarByClass(MatrixMlp.class);  
 	    job.setMapperClass(MatrixMlpMapper.class);
 	    job.setReducerClass(MatrixMlpReducer.class);

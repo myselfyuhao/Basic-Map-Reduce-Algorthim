@@ -50,7 +50,7 @@ public class MatrixAdd{
 	    	System.err.println("Usage: numbersum <in> <out>");  
 	    	System.exit(2);  
 	    	}  
-	    Job job = new Job(conf, "number sum");  
+	    Job job = new Job(conf, "Matrix Add");  
 	    job.setJarByClass(MatrixAdd.class);  
 	    job.setMapperClass(MatrixAddMapper.class);
 	    job.setReducerClass(MatrixAddReducer.class);
