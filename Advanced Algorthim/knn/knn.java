@@ -1,4 +1,3 @@
-package knn;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -147,7 +146,7 @@ public class KNN {
 	    newjob.setReducerClass(KNNReducer.class);
 	    newjob.setMapOutputKeyClass(IntWritable.class);
 	    newjob.setMapOutputValueClass(Text.class);
-	    newjob.setOutputKeyClass(KNNReducer.class);  
+	    newjob.setOutputKeyClass(IntWritable.class);  
 	    newjob.setOutputValueClass(Text.class);
 	    FileInputFormat.addInputPath(newjob, new Path(newargs[0]));  
 	    FileOutputFormat.setOutputPath(newjob,new Path(newargs[1]));    
